@@ -47,9 +47,9 @@ main {
       flex-direction: column;
       gap: 8px;
     }
-    nav.open {
-    display: block;
+   header {
+  padding: 15px;
+   }
 }
-  }
 
   
