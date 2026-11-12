@@ -28,4 +28,28 @@ main {
   margin: 0 auto;
   padding: 30px;
 }
+
+#hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #hamburger {
+        display: block;
+    }
+    nav {
+      display: none;
+    }
+    nav.show {
+    display: block;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: 8px;
+    }
+    nav.open {
+    display: block;
+}
+  }
+
   
