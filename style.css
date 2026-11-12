@@ -9,3 +9,9 @@ header {
   color: #fff;
   padding: 30px;
 }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+  
