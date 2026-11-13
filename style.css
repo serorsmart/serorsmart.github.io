@@ -104,6 +104,14 @@ nav a:hover {
     height: auto;
     border-radius: 15px;
 }
+.project-card:nth-of-type(2) img {
+    grid-column: 2;
+    grid-row: 1;
+}
+.project-card:nth-of-type(2) .project-text {
+    grid-column: 1;
+    grid-row: 1;
+}
 #projects img {
     display: block;
     width: 100%;
@@ -154,6 +162,11 @@ main {
 .project-card {
     grid-template-columns: 1fr;
     gap: 20px;
+}
+.project-card:nth-of-type(2) img,
+.project-card:nth-of-type(2) .project-text {
+    grid-column: 1;
+    grid-row: auto;
 }
 }
 
