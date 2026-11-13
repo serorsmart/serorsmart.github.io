@@ -163,6 +163,9 @@ main {
     grid-template-columns: 1fr;
     gap: 20px;
 }
+.project-card .project-text h3 {
+    margin-top: 0;
+}
 .project-card:nth-of-type(2) img,
 .project-card:nth-of-type(2) .project-text {
     grid-column: 1;
