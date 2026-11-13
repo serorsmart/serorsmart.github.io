@@ -56,6 +56,48 @@ nav a {
 nav a:hover {
   color: #A8DADC;
 }
+#grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+    "hom hom hom hom hom hom hom hom hom hom hom hom"
+    "abt abt abt abt abt abt abt abt abt abt abt abt"
+    "prj prj prj prj prj prj prj prj prj prj prj prj"
+    "skl skl skl skl skl skl skl skl skl skl skl skl"
+    "con con con con con con con con con con con con";
+}
+#home {
+    grid-area: hom;
+}
+#about {
+    grid-area: abt;
+    align-items: center;
+}
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+   align-items: stretch;
+}
+.about-text {
+    grid-column: span 6;
+}
+.about-content img {
+    grid-column: span 6;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+#projects {
+    grid-area: prj;
+}
+#skills {
+    grid-area: skl;
+}
+#contact {
+    grid-area: con;
+}
 main {
   max-width: 1100px;
   margin: 0 auto;
@@ -79,6 +121,20 @@ main {
    header {
   padding: 15px;
    }
+   .about-content {
+    grid-template-columns: 1fr;
+}
+
+.about-text {
+    grid-column: 1 / -1;
+}
+
+.about-content img {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 }
 
   
