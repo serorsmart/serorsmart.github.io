@@ -9,3 +9,10 @@ navLinks.forEach(function(link) {
   nav.classList.remove("show");
 });
 });
+const skillCards = document.querySelectorAll(".skill-card");
+
+skillCards.forEach(function(card) {
+    card.addEventListener("click", function() {
+        card.querySelector(".skill-card-inner").classList.toggle("flipped");
+    });
+});
