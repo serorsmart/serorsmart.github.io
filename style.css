@@ -192,6 +192,70 @@ main {
     color: white;
     font-size: 28px;
 }
+/* CONTACT SECTION */
+
+#contact {
+  background-color: #101f34;
+  color: white;
+  padding: 25px 20px;
+  text-align: center;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+#contact h2 {
+  color: #A8DADC;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+#contact > p {
+  color: #d7e4ed;
+  margin-bottom: 35px;
+}
+/* CONTACT FORM */
+
+#contactForm {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #243247;
+  border-radius: 16px;
+  text-align: left;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contactForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #A8DADC;
+  border-radius: 8px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+#contactForm button {
+  width: 100%;
+  padding: 15px;
+  background-color: #A8DADC;
+  color: #243247;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background-color: #ffffff;
+}
 @media (min-width: 769px) {
     header nav {
         position: fixed;
