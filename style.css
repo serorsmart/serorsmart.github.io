@@ -10,9 +10,9 @@ header {
   color: #fff;
   padding: 30px;
   background-image: linear-gradient(
-        rgba(18, 30, 48, 0.75),
-        rgba(18, 30, 48, 0.75)
-    ), url("images/bkg.png");
+        rgba(18, 30, 48, 0.45),
+        rgba(18, 30, 48, 0.45)
+    ), url("images/bkg2.png");
   background-size: cover;
   background-position: center;
   min-height: 600px;
@@ -30,7 +30,7 @@ header p {
     position: fixed;
     top: -2px;
     left: 10px;
-    width: 180px;
+    width: 200px;
     height: auto;
     z-index: 1100;
 }
