@@ -1,14 +1,12 @@
 const hamburger = document.querySelector("#hamburger");
 const nav = document.querySelector("nav");
  hamburger.addEventListener("click", function() {
-     const open = nav.classList.toggle("show");
-     hamburger.setAttribute("aria-expanded", String(open));
+     nav.classList.toggle("show");
 });
 const navLinks = document.querySelectorAll("nav a");
 navLinks.forEach(function(link) {
   link.addEventListener("click", function() {
   nav.classList.remove("show");
-  hamburger.setAttribute("aria-expanded", "false");
 });
 });
 const skillCards = document.querySelectorAll(".skill-card");
