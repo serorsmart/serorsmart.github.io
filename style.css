@@ -86,7 +86,7 @@ nav {
     background-color: #243247;
     display: flex;
     justify-content: center;
-    padding-right: 30px;
+    padding-right: 0;
     z-index: 1000;
     height: 80px;
     align-items: center;
@@ -97,6 +97,19 @@ nav ul {
   display: flex;
   gap: 25px;
   padding-left: 0;
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  nav ul {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .header-logo {
+    width: 160px;
+  }
 }
 @media (min-width: 769px) {
   nav.show {
@@ -427,7 +440,7 @@ footer p {
     color: #A8DADC;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1051px) {
     header nav {
         position: fixed;
         top: 0;
@@ -440,11 +453,11 @@ footer p {
     }
     header nav ul {
         justify-content: center;
-        gap: 35px;
+        gap: 20px;
         margin: 0;
     }
     header nav a {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
     }
 }
@@ -452,11 +465,7 @@ header .logo {
     padding-top: 100px;
 }
 
-header > p {
-    margin-top: 10px;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 #hamburger {
   display: flex;
   width: 48px;
