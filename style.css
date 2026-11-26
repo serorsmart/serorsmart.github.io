@@ -147,6 +147,7 @@ nav a:hover {
     "hom hom hom hom hom hom hom hom hom hom hom hom"
     "abt abt abt abt abt abt abt abt abt abt abt abt"
     "prj prj prj prj prj prj prj prj prj prj prj prj"
+    "srv srv srv srv srv srv srv srv srv srv srv srv"
     "skl skl skl skl skl skl skl skl skl skl skl skl"
     "con con con con con con con con con con con con";
 }
@@ -681,4 +682,53 @@ nav a {
     margin: 0;
     padding: 0;
   }
+}
+
+/* Services */
+#services {
+  grid-area: srv;
+  scroll-margin-top: 100px;
+}
+
+#services h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #243247;
+  margin-bottom: 20px;
+}
+
+#services h2::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 4px;
+  background-color: #00bcd4;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.service-card {
+  background: #243247;
+  border: 2px solid #00bcd4;
+  color: #fff;
+  border-radius: 15px;
+  padding: 24px;
+  box-shadow: 0 5px 16px rgba(36, 50, 71, 0.12);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+#services a {
+  color: #006b79;
+  font-weight: 700;
 }
